@@ -1,0 +1,12 @@
+run
+{
+ALLOCATE CHANNEL ch1 DEVICE TYPE DISK;
+ALLOCATE CHANNEL ch2 DEVICE TYPE DISK;
+ALLOCATE CHANNEL ch3 DEVICE TYPE DISK;
+ALLOCATE CHANNEL ch4 DEVICE TYPE DISK;
+RESTORE DATABASE VALIDATE;
+release channel ch1;
+release channel ch2;
+release channel ch3;
+release channel ch4;
+}
